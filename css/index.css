@@ -1,0 +1,64 @@
+.link_all
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 20px 0;
+}
+
+.link_services
+{
+    border-top: 7px solid red;
+    width: 400px;
+    box-shadow: 0 0 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.link_games
+{
+    border-top: 7px solid red;
+    width: 400px;
+    box-shadow: 0 0 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.link_services hr, .link_games hr
+{
+    margin: 5px 14px 5px 14px;
+}
+
+.amsfiles_link
+{
+    margin: 20px 0 20px 0;
+    border-top: 7px solid #00008b;
+    width: 100%;
+    box-shadow: 0 0 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.amsnotes_link
+{
+    margin: 20px 0 20px 0;
+    border-top: 7px solid #00ff00;
+    width: 100%;
+    box-shadow: 0 0 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.amsfiles_link *, .amsnotes_link *
+{
+    margin-left: 25px;
+}

@@ -1,0 +1,54 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    max-width: 1280px;
+    margin: 10px auto 10px auto;
+}
+
+header
+{
+    display: flex;
+    border-radius: 15px;
+    background-color: #4b0082;
+    height: 120px;
+    align-items: center;
+}
+
+header a
+{
+    margin-left: 25px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.siteMap
+{
+    margin: 10px 25px 10px 25px;
+}
+
+.siteMap a
+{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+footer
+{
+    border-radius: 15px;
+    background-color: #00f;
+}
+
+footer p
+{
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
