@@ -1,0 +1,91 @@
+function GetRandom(min, max)
+{
+    return Math.trunc(Math.random() * (max - min) + min);
+}
+
+function SetNumChar(vle)
+{
+    if (vle == 1 & numCharVle.value < 50)
+    {
+        numCharVle.value = numCharVle.value - (-1);
+    }
+
+    if (vle == -1 & numCharVle.value > 1)
+    {
+        numCharVle.value = numCharVle.value - 1;
+    }
+
+    if (vle > 1)
+    {
+        numCharVle.value = vle;
+    }
+}
+
+function GetCharUp()
+{
+    const charUp = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    return charUp[GetRandom(0, 26)];
+}
+
+function GetCharLow()
+{
+    const charLow = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "k", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    return charLow[GetRandom(0, 26)];
+}
+
+function GetDigit()
+{
+    const digit = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    return digit[GetRandom(0, 10)];
+}
+
+function GetSpChar()
+{
+    const spChar =[ "*", "#", "+", "-", "$", "&", "<", ">", "(", ")" ];
+    return spChar[GetRandom(0, 10)];
+}
+
+function GetPasswdChar()
+{
+    var x = GetRandom(0, 4);
+    var pChar = "";
+
+    if ((x == 0) && (charUp.checked))
+    {
+        pChar = GetCharUp();
+    }
+    if ((x == 1) && (charLow.checked))
+    {
+        pChar = GetCharLow();
+    }
+    if ((x == 2) && (digit.checked))
+    {
+        pChar = GetDigit();
+    }
+    if ((x == 3) && (spChar.checked))
+    {
+        pChar = GetSpChar();
+    }
+
+    return pChar;
+}
+
+function GetPassword()
+{
+	var passStr = "";
+    var passStrLenght = numCharVle.value;
+
+	if (!charUp.checked && !charLow.checked && !digit.checked && !spChar.checked)
+	{
+		passwd.value = "Не выбраны типы символов";
+	}
+	else
+	{
+		while (passStr.length < passStrLenght)
+		{
+			passStr += GetPasswdChar();
+		}
+
+		passwd.value = passStr;
+	}	
+}

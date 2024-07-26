@@ -30,7 +30,7 @@
 
             <div class="link_all">
                 <div class="link_services">
-                    <i> <a href="#">PasswordGenerator</a> </i>
+                    <i> <a href="./passwordgen.php">PasswordGenerator</a> </i>
                     <p>Простой генератор паролей</p>
                     <hr>
                     <i> <a href="#">Factor</a> </i>
