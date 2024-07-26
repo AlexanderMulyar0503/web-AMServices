@@ -25,7 +25,7 @@
             </header>
 
             <div class="siteMap">
-            <i> <a href="./">Главная &#8594 Сервисы</a> <a href="./passwordgen.php">&#8594 Генератор паролей</a> </i>
+                <i> <a href="./">Главная &#8594 Сервисы</a> <a href="./passwordgen.php">&#8594 Генератор паролей</a> </i>
             </div>
 
             <div class="passwordForm">
