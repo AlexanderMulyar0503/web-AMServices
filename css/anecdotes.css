@@ -1,0 +1,47 @@
+.newAnecdote
+{
+    margin: 20px 0 20px 0;
+    padding: 15px 20px 15px 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px;
+}
+
+.newAnecdote input
+{
+    width: 100%;
+    margin: 5px 5px;
+    font-size: 18px;
+}
+
+.anecdotesList
+{
+    margin: 20px 0 20px 0;
+    padding: 15px 20px 15px 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px;
+}
+
+.ancd
+{
+    margin: 7px 7px;
+    display: flex;
+    align-items: center;
+    transition: background-color .5s;
+}
+
+.ancd:hover
+{
+    background-color: #add8e6;
+}
+
+.ancdText
+{
+    width: calc(100% - 40px);
+    overflow-x: auto;
+    font-size: 18px;
+}
+
+.ancdDelete
+{
+    width: 40px;
+}
