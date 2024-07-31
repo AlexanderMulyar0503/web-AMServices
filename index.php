@@ -53,7 +53,7 @@
                     <i> <a href="./tag.php">Tag</a> </i>
                     <p>Игра "Пятнашки"</p>
                     <hr>
-                    <i> <a href="#">Schulte</a> </i>
+                    <i> <a href="./schulte.php">Schulte</a> </i>
                     <p>Таблицы Шульте</p>
                     <hr>
                 </div>
