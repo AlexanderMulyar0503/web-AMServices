@@ -47,8 +47,8 @@ function GetSpChar()
 
 function GetPasswdChar()
 {
-    var x = GetRandom(0, 4);
-    var pChar = "";
+    let x = GetRandom(0, 4);
+    let pChar = "";
 
     if ((x == 0) && (charUp.checked))
     {
@@ -72,20 +72,20 @@ function GetPasswdChar()
 
 function GetPassword()
 {
-	var passStr = "";
-    var passStrLenght = numCharVle.value;
+    let passStr = "";
+    let passStrLenght = numCharVle.value;
 
-	if (!charUp.checked && !charLow.checked && !digit.checked && !spChar.checked)
-	{
-		passwd.value = "Не выбраны типы символов";
-	}
-	else
-	{
-		while (passStr.length < passStrLenght)
-		{
-			passStr += GetPasswdChar();
-		}
+    if (!charUp.checked && !charLow.checked && !digit.checked && !spChar.checked)
+    {
+        passwd.value = "Не выбраны типы символов";
+    }
+    else
+    {
+        while (passStr.length < passStrLenght)
+        {
+            passStr += GetPasswdChar();
+        }
 
-		passwd.value = passStr;
-	}	
+        passwd.value = passStr;
+    }
 }
