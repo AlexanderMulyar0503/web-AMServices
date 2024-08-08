@@ -64,7 +64,7 @@
                 {
                     print("<div class='amsfiles_link'>");
                     print("<img src='img/AMSFiles.png'  width='50px' height='50px'>");
-                    print("<a href='./amsfiles/'>AMSFiles</a>");
+                    print("<a href='./amsfiles/' target='_blank'>AMSFiles</a>");
                     print("</div>");
                 }
 
@@ -72,7 +72,7 @@
                 {
                     print("<div class='amsnotes_link'>");
                     print("<img src='img/AMSNotes.png' width='50px' height='50px'>");
-                    print("<a href='./amsnotes/'>AMSNotes</a>");
+                    print("<a href='./amsnotes/' target='_blank'>AMSNotes</a>");
                     print("</div>");
                 }
             ?>
