@@ -6,4 +6,5 @@
 
     $CONF["enable_amsfiles"] = true;
     $CONF["enable_amsnotes"] = true;
+    $CONF["enable_amsclock"] = true;
 ?>

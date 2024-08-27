@@ -75,6 +75,14 @@
                     print("<a href='./amsnotes/' target='_blank'>AMSNotes</a>");
                     print("</div>");
                 }
+
+                if ($CONF["enable_amsclock"] == true)
+                {
+                    print("<div class='amsclock_link'>");
+                    print("<img src='img/AMSClock.png' width='50px' height='50px'>");
+                    print("<a href='./amsclock/' target='_blank'>AMSClock</a>");
+                    print("</div>");
+                }
             ?>
 
             <footer>

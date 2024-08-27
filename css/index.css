@@ -58,7 +58,20 @@
     align-items: center;
 }
 
-.amsfiles_link *, .amsnotes_link *
+.amsclock_link
+{
+    margin: 20px 0 20px 0;
+    border-top: 7px solid #2c2f3b;
+    width: 100%;
+    box-shadow: 0 0 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.amsfiles_link *, .amsnotes_link *, .amsclock_link *
 {
     margin-left: 25px;
 }
