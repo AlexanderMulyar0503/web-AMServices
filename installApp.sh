@@ -27,6 +27,8 @@ case "$app" in
                 echo "Обновление AMSFiles"
                 cd amsfiles
                 git pull origin master
+                echo "---"
+                echo "Сравните файлы ./amsfiles/conf.php и ./amsfiles/conf.sample.php"
             ;;
 
             *) echo "Неверное значение" ;;
@@ -45,6 +47,7 @@ case "$app" in
                 git clone https://github.com/AlexanderMulyar0503/web-AMSNotes.git ./amsnotes
                 cd amsnotes
                 cp conf.sample.php conf.php
+                composer install
                 echo "---"
                 echo "Внесите необходимые изменения в файл ./amsnotes/conf.php"
             ;;
@@ -53,6 +56,9 @@ case "$app" in
                 echo "Обновление AMSNotes"
                 cd amsnotes
                 git pull origin master
+                composer install
+                echo "---"
+                echo "Сравните файлы ./amsnotes/conf.php и ./amsnotes/conf.sample.php"
             ;;
 
             *) echo "Неверное значение" ;;
@@ -79,6 +85,8 @@ case "$app" in
                 echo "Обновление AMSClock"
                 cd amsclock
                 git pull origin master
+                echo "---"
+                echo "Сравните файлы ./amsclock/conf.php и ./amsclock/conf.sample.php"
             ;;
 
             *) echo "Неверное значение" ;;
